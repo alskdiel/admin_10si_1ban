@@ -1,0 +1,10 @@
+<h1>ADMIN ITEM LIST</h1>
+<% @items.each do |item| %>
+  <a href="/item/<%= item.id %>">
+    <div class="item-container">
+      <div><%= item.name %></div>
+    </div>
+  </a>
+<% end %>
+
+<%= link_to "add", "/item" %>

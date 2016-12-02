@@ -1,0 +1,13 @@
+<h1>ITEM</h1>
+
+<div><%= @item.name %></div>
+<div><%= @item.price%></div>
+<div><%= @item.content%></div>
+<div><%= @item.hits %></div>
+
+<%= image_tag @item.image.url %>
+
+<div>신청자 수</div>
+<div><%= @item.current_num %>
+
+<%= link_to "list", "/list" %>
